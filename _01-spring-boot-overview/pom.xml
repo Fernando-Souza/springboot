@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+          <groupId>com.udemy</groupId>
+          <artifactId>springboot</artifactId>
+          <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+    <groupId>com.udemy</groupId>
+    <artifactId>_01-spring-boot-overview</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>_01-spring-boot-demo</module>
+        <module>_02-dev-tools-demo</module>
+        <module>_03-actuator-demo</module>
+        <module>_04-actuator-security-demo</module>
+        <module>_05-command-line-demo</module>
+        <module>_06-properties-demo</module>
+    </modules>   
+
+</project>
