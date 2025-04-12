@@ -1,6 +1,7 @@
-package com.luv2code.springcoredemo;
+package com.udemy.springcoredemo;
 
-import org.springframework.beans.factory.annotation.Autowired;
+
+//import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -11,7 +12,7 @@ public class DemoController {
     private Coach myCoach;
 
     // define a constructor for dependency injection
-    @Autowired
+    //@Autowired : opcional se vc possui somente 1 construtor
     public DemoController(Coach theCoach) {
         myCoach = theCoach;
     }

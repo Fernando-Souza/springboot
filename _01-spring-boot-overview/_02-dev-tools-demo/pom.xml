@@ -11,6 +11,20 @@
 
     <groupId>com.udemy</groupId>
     <artifactId>_02-dev-tools-demo</artifactId>
-    <version>1.0-SNAPSHOT</version>  
+    <version>1.0-SNAPSHOT</version>
+    <!--
+    Esta depenencia foi explicada para esse projeto. Por se tratar de uma
+    depencia útil para todos os demais projetos a mesma foi incluída no pom parent
+    ficando disponível para todos os modulos.-->
+    <!--
+    <dependencies>
+      <dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+			<optional>true</optional>
+		</dependency>
+    </dependencies>  
+    -->
 
 </project>
