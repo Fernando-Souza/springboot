@@ -5,6 +5,7 @@ import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.stereotype.Component;
 
 @Component
+//@Scope(ConfigurableBeanFactory.SCOPE_SINGLETON)
 @Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
 public class CricketCoach implements Coach {
 

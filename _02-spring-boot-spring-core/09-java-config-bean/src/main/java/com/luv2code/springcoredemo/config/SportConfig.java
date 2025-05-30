@@ -9,6 +9,7 @@ import org.springframework.context.annotation.Configuration;
 public class SportConfig {
 
     @Bean("aquatic")
+    //@Bean //neste caso o bean terá o nome do método
     public Coach swimCoach() {
         return new SwimCoach();
     }
