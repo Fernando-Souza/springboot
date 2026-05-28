@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+          <groupId>com.udemy</groupId>
+          <artifactId>springboot</artifactId>
+          <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+    <groupId>com.udemy</groupId>
+    <artifactId>_04-spring-boot-rest-crud</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>01-spring-boot-rest-crud-hello-world</module>
+        <module>02-spring-boot-rest-crud-students-list-base</module>
+        <module>03-spring-boot-rest-crud-students-list-refactored</module>
+        <module>04-spring-boot-rest-crud-students-path-variable-get-singl-student</module>
+        <module>05-spring-boot-rest-crud-students-exception-handling</module>
+        <module>06-spring-boot-rest-crud-students-global-exception-handling</module>
+        <module>20-spring-boot-rest-crud-employee-list-employees</module>
+        <module>21-spring-boot-rest-crud-employee-refactored-service-layer</module>
+        <module>22-spring-boot-rest-crud-employee-dao-find-add-update-delete</module>
+        <module>23-spring-boot-rest-crud-employee-service-find-add-update-delete</module>
+        <module>24-spring-boot-rest-crud-employee-rest-controller-get-single-employee</module>
+        <module>25-spring-boot-rest-crud-employee-rest-controller-add-employee</module>
+        <module>26-spring-boot-rest-crud-employee-rest-controller-update-employee-and-delete-employee</module>
+        <module>30-spring-boot-rest-crud-employee-with-spring-data-jpa</module>
+        <module>40-spring-boot-rest-crud-employee-with-spring-data-rest</module>
+        <module>50-spring-boot-rest-crud-employee-with-spring-data-rest-configs-and-sorting</module>
+        <module>spring-boot-employees-sql-script</module>
+    </modules>  
+
+</project>

@@ -1,13 +1,14 @@
 package com.udemy.dao;
 
-import com.udemy.entity.Student;
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.TypedQuery;
-import org.springframework.beans.factory.annotation.Autowired;
+import java.util.List;
+
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.List;
+import com.udemy.entity.Student;
+
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.TypedQuery;
 
 @Repository
 public class StudentDAOImpl implements StudentDAO {
@@ -16,7 +17,7 @@ public class StudentDAOImpl implements StudentDAO {
     private EntityManager entityManager;
 
     // inject entity manager using constructor injection
-    @Autowired
+    //@Autowired
     public StudentDAOImpl(EntityManager entityManager) {
         this.entityManager = entityManager;
     }
@@ -36,7 +37,10 @@ public class StudentDAOImpl implements StudentDAO {
     @Override
     public List<Student> findAll() {
         // create query
-        TypedQuery<Student> theQuery = entityManager.createQuery("FROM Student", Student.class);
+        //TypedQuery<Student> theQuery = entityManager.createQuery("FROM Student", Student.class);
+        //ordena os estudantes pelo último nome
+        TypedQuery<Student> theQuery = entityManager.createQuery("FROM Student order by lastName asc", Student.class);
+  
 
         // return query results
         return theQuery.getResultList();

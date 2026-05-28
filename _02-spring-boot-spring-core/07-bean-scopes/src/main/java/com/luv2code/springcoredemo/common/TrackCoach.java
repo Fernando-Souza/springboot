@@ -5,6 +5,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class TrackCoach implements Coach {
 
+    String name;
+
     public TrackCoach() {
         System.out.println("In constructor: " + getClass().getSimpleName());
     }
@@ -12,5 +14,13 @@ public class TrackCoach implements Coach {
     @Override
     public String getDailyWorkout() {
         return "Run a hard 5k!";
+    }
+
+     @Override
+    public void setName(String name) {
+        this.name=name;
+    }
+     public String getName(){
+        return this.name;
     }
 }

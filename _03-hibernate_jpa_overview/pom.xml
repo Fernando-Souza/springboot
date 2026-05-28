@@ -1,49 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <parent>
-          <groupId>com.udemy</groupId>
-          <artifactId>springboot</artifactId>
-          <version>0.0.1-SNAPSHOT</version>
-    </parent>
-
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
     <groupId>com.udemy</groupId>
-    <artifactId>_03-hibernate_jpa_overview</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <packaging>pom</packaging>
-    <modules>
-        <module>_00-starter-sql-scripts</module>
-        <module>_01-cruddemo-student-create</module>
-        <module>_02-cruddemo-student-read</module>
-        <module>_03-cruddemo-student-query_find_all</module>
-        <module>_04-cruddemo-student-query-findbylastname</module>
-        <module>_05-cruddemo-student-update</module>
-        <module>_06-cruddemo-student-delete-single-student</module>
-        <module>_07-cruddemo-student-query-delete-all-students</module>
-        <module>_08-cruddemo-create-db-tables-automatically</module>
-    </modules>
+    <artifactId>springboot</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
 
-    <properties>
-        <maven.compiler.source>21</maven.compiler.source>
-        <maven.compiler.target>21</maven.compiler.target>
-    </properties>
-    <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa -->
-    <dependencies>
-        <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-data-jpa</artifactId>
-        <version>3.5.0</version>
+  <groupId>com.udemy</groupId>
+  <artifactId>_03-hibernate_jpa_overview</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <modules>
+    <module>_00-starter-sql-scripts</module>
+    <module>cruddemo-student</module>
+    <module>_01-cruddemo-student-create</module>
+    <module>_02-cruddemo-student-read</module>
+    <module>_03-cruddemo-student-query_find_all</module>
+    <module>_04-cruddemo-student-query-findbylastname</module>
+    <module>_05-cruddemo-student-update</module>
+    <module>_06-cruddemo-student-delete-single-student</module>
+    <module>_07-cruddemo-student-query-delete-all-students</module>
+    <module>_08-cruddemo-create-db-tables-automatically</module>
+  </modules>
+
+  
+  <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa -->
+  <dependencies>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-data-jpa</artifactId>      
     </dependency>
     <dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
-    </dependencies>
-    
-    <build>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.mysql</groupId>
+      <artifactId>mysql-connector-j</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
     <plugins>
       <plugin>
         <groupId>org.springframework.boot</groupId>

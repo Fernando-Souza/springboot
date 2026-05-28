@@ -9,6 +9,8 @@ import org.springframework.stereotype.Component;
 @Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
 public class CricketCoach implements Coach {
 
+    String name;
+
     public CricketCoach() {
         System.out.println("In constructor: " + getClass().getSimpleName());
     }
@@ -17,4 +19,15 @@ public class CricketCoach implements Coach {
     public String getDailyWorkout() {
         return "Practice fast bowling for 15 minutes";
     }
+
+    @Override
+    public void setName(String name) {
+        this.name=name;
+    }
+
+     public String getName(){
+        return this.name;
+    }
+
+    
 }
