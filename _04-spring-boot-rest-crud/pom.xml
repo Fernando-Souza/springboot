@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-          <groupId>com.udemy</groupId>
-          <artifactId>springboot</artifactId>
-          <version>0.0.1-SNAPSHOT</version>
+        <groupId>com.udemy</groupId>
+        <artifactId>springboot</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
     </parent>
 
     <groupId>com.udemy</groupId>
@@ -20,17 +20,51 @@
         <module>04-spring-boot-rest-crud-students-path-variable-get-single-student</module>
         <module>05-spring-boot-rest-crud-students-exception-handling</module>
         <module>06-spring-boot-rest-crud-students-global-exception-handling</module>
-        <module>20-spring-boot-rest-crud-employee-list-employees</module>
-        <module>21-spring-boot-rest-crud-employee-refactored-service-layer</module>
-        <module>22-spring-boot-rest-crud-employee-dao-find-add-update-delete</module>
-        <module>23-spring-boot-rest-crud-employee-service-find-add-update-delete</module>
-        <module>24-spring-boot-rest-crud-employee-rest-controller-get-single-employee</module>
-        <module>25-spring-boot-rest-crud-employee-rest-controller-add-employee</module>
-        <module>26-spring-boot-rest-crud-employee-rest-controller-update-employee-and-delete-employee</module>
-        <module>30-spring-boot-rest-crud-employee-with-spring-data-jpa</module>
-        <module>40-spring-boot-rest-crud-employee-with-spring-data-rest</module>
-        <module>50-spring-boot-rest-crud-employee-with-spring-data-rest-configs-and-sorting</module>
-        
-    </modules>  
+        <module>07-spring-boot-rest-crud-employee-list-employees</module>
+        <module>08-spring-boot-rest-crud-employee-refactored-service-layer</module>
+        <module>09-spring-boot-rest-crud-employee-dao-find-add-update-delete</module>
+        <module>10-spring-boot-rest-crud-employee-service-find-add-update-delete</module>
+        <module>11-spring-boot-rest-crud-employee-rest-controller-get-single-employee</module>
+        <module>12-spring-boot-rest-crud-employee-rest-controller-add-employee</module>
+        <module>13-spring-boot-rest-crud-employee-rest-controller-update-employee-and-delete-employee</module>
+        <module>14-spring-boot-rest-crud-employee-rest-controller-patch-employee</module>
+        <module>15-spring-boot-rest-crud-employee-rest-controller-delete-employee</module>
+        <module>16-spring-boot-rest-crud-employee-with-spring-data-jpa</module>
+        <module>17-spring-boot-rest-crud-employee-with-spring-data-rest</module>
+        <module>18-spring-boot-rest-crud-employee-with-spring-data-rest-configs-and-sorting</module>
+        <module>50-openapi-swagger-starter-projects-spring-data-jpa</module>
+        <module>51-openapi-swagger-solutions</module>
+
+    </modules>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springdoc</groupId>
+                <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+                <version>3.0.3</version>              
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-jpa</artifactId>
+                <version>4.0.6</version>
+            </dependency>
+            <dependency>
+                <groupId>com.mysql</groupId>
+                <artifactId>mysql-connector-j</artifactId>
+                <scope>runtime</scope>
+                <version>9.7.0</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-jackson</artifactId>
+                <version>4.0.6</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-rest</artifactId>
+                <version>4.0.6</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 </project>

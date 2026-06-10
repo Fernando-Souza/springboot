@@ -10,7 +10,7 @@
     </parent>
 
     <groupId>com.udemy</groupId>
-    <artifactId>_01-spring-boot-rest-crud-hello-world</artifactId>
+    <artifactId>01-spring-boot-rest-crud-hello-world</artifactId>
     <version>1.0-SNAPSHOT</version>   
 
 </project>

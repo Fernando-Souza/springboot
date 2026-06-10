@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.5.14</version>
+		<version>4.0.6</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.udemy</groupId>
@@ -17,6 +17,7 @@
 		<module>_02-spring-boot-spring-core</module>
 		<module>_03-hibernate_jpa_overview</module>
 		<module>_04-spring-boot-rest-crud</module>
+		<module>_05-spring-boot-rest-security</module>
 	</modules>
 	<name>springboot</name>
 	<description>Demo project for Spring Boot</description>
@@ -46,13 +47,13 @@
 		</dependency>
 	</dependencies>
 
-	<!--<build>
+	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
-	</build>-->
+	</build>
 
 </project>

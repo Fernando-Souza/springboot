@@ -13,8 +13,7 @@
   <artifactId>_03-hibernate_jpa_overview</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <modules>
-    <module>_00-starter-sql-scripts</module>
+  <modules>    
     <module>cruddemo-student</module>
     <module>_01-cruddemo-student-create</module>
     <module>_02-cruddemo-student-read</module>
